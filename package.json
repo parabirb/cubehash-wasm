@@ -1,0 +1,21 @@
+{
+  "name": "cubehash-wasm",
+  "version": "1.0.0",
+  "description": "A port of CubeHash to WASM.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run-script build && node test",
+    "build": "asc cubehash.ts --binaryFile cubehash.wasm --textFile cubehash.wat -Ospeed --optimizeLevel 3 --converge --exportRuntime"
+  },
+  "keywords": [
+    "cubehash"
+  ],
+  "author": "parabirb",
+  "license": "Unlicense",
+  "devDependencies": {
+    "assemblyscript": "^0.19.20"
+  },
+  "dependencies": {
+    "@assemblyscript/loader": "^0.19.20"
+  }
+}
