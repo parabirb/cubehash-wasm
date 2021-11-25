@@ -1,6 +1,8 @@
 # cubehash-wasm
 ## DISCLAIMER
 THIS LIBRARY IS MEANT AS A REFERENCE IMPLEMENTATION. A *REFERENCE IMPLEMENTATION*. I AM NOT AN EXPERIENCED CRYPTOGRAPHER AND I CANNOT GUARANTEE THAT THIS LIBRARY IS SECURE. **DO NOT USE THIS FOR ANYTHING IMPORTANT! YOU HAVE BEEN WARNED.**
+## WARNING
+DO NOT, I repeat, DO NOT build this library with anything other than the build flags given in the `package.json`. You will experience IMMENSE slowdowns (up to around 5 times slower). This library is already slow (the pure JS implementation is much faster), but without the build flags or with incorrect build flags it is *much* slower. Thank you for your time.
 
 ## introduction
 this library is a port of my [js cubehash library](https://github.com/parabirb/cubehash) to assemblyscript. i believed that it would provide for higher optimization (which i was wrong about). this took hours of work, and frankly, i regret it deeply. it runs 3 times slower than the pure JS version on 1MB arrays, and cannot run at all on 500MB arrays. if you understand this and are still curious, feel free to read the below.
