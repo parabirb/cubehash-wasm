@@ -17,5 +17,13 @@
   },
   "dependencies": {
     "@assemblyscript/loader": "^0.19.20"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/parabirb/cubehash-wasm.git"
+  },
+  "bugs": {
+    "url": "https://github.com/parabirb/cubehash-wasm/issues"
+  },
+  "homepage": "https://github.com/parabirb/cubehash-wasm#readme"
 }
