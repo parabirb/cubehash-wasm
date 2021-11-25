@@ -14,11 +14,7 @@ browser:
 export function hash(m: Uint8Array, i: u32, r: u32, b: u32, f: u32, h: u32): Uint8Array // this is the hash function's signature.
 export const Uint8Array_ID = idof<Uint8Array>(); // you need this if you want to hash anything!
 ```
-* you will have to compile the binaries yourself most likely. run the below in your terminal.
-```
-git clone git@github.com:parabirb/cubehash-wasm.git && cd cubehash-wasm && npm i && npm run-script build
-```
-after running this in your terminal, you should have the .wasm file which you can then use.
+* the wasm file is available in the git repo for your convenience.
 
 node:
 * `npm i --save cubehash-wasm` will install cubehash-wasm for you.
