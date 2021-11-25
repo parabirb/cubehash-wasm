@@ -6,7 +6,6 @@
     const util = require("./util");
     const crypto = require("crypto");
     const CubeHash = await (require("."))();
-    const CubeHash2 = await require("./original");
     const {performance} = require("perf_hooks");
     const cubeHash512 = new CubeHash();
     const testVectorCubeHash = new CubeHash(80, 8, 1, 80, 512);
